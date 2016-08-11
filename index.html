@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!--[if IE]>
+  Please update your internet browser. https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads
+  <![endif]-->
   <meta name="viewport" content="width=device-width">
   <title>A simple CSS flexbox grid system</title>
   <meta name="description" content="A simple CSS flexbox grid system for your website layout"/>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="demo.css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div class="row container t-c">
     <div class="col">
       <h1>A simple CSS flexbox grid system</h1>
       <p>
-        Flexbox grid system guideline. More info visit <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a>. Media query set to <code>@media (max-width: 768px)</code>
+        Flexbox grid system guideline. <code>style.css</code> contains all CSS code for the grid system. Media query set to <code>@media (max-width: 768px)</code>
       </p>
     </div>
   </div>
@@ -37,6 +42,7 @@
       </xmp>
     </div>
   </div>
+
 
   <h2 class="t-c">
     Use <code>row</code> on parent div and use <code>col</code> on child divs
@@ -145,14 +151,15 @@
     </div>
   </div>
 
+
   <h2 class="t-c">
-    Custom grid <code>col-30</code> and <code>col-50</code> (Showing <code>col-30</code> below)
+    Custom grid <code>auto</code> with <code>col--30</code> (33.3333% width)
   </h2>
   <div class="row container">
     <div class="col">
       <div class="demostyle">Auto - #1</div>
     </div>
-    <div class="col col-30">
+    <div class="col col--30">
       <div class="demostyle">33.3333% - #2</div>
     </div>
   </div>
@@ -164,7 +171,7 @@
           <div class="col">
             <div class="demostyle">Auto - #1</div>
           </div>
-          <div class="col col-30">
+          <div class="col col--30">
             <div class="demostyle">33.3333% - #2</div>
           </div>
         </div>
@@ -174,7 +181,7 @@
 
 
   <h2 class="t-c">
-    Example with text <code>auto</code> and <code>col-30</code>
+    Example with text <code>auto</code> and <code>col--30</code>
   </h2>
   <div class="row container">
     <div class="col">
@@ -182,7 +189,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dui eleifend, volutpat odio id, maximus risus. Quisque dapibus vulputate orci, eget feugiat lectus interdum a. Cras et nibh mauris. Maecenas efficitur felis orci, a egestas magna maximus sit amet. Curabitur eu urna dictum, dictum massa nec, maximus mauris. Aenean feugiat, odio id varius faucibus, est mi rutrum sapien, vitae pulvinar arcu neque at mi. Curabitur blandit odio id est varius dapibus. Donec vitae purus ultricies, cursus purus ac, aliquam orci. Phasellus faucibus risus eu magna sodales lacinia. Sed vitae ultrices enim.
       </div>
     </div>
-    <div class="col col-30">
+    <div class="col col--30">
       <div class="demostyle">
         Donec venenatis purus tellus, ac viverra sapien malesuada vitae. Donec venenatis rhoncus augue in dapibus. Integer aliquam efficitur dolor ac molestie. Vestibulum sit amet congue urna, et ultrices metus. Etiam vel lectus nibh. Aliquam erat volutpat. Curabitur tristique erat eu leo sollicitudin, at faucibus ex sollicitudin. Proin pellentesque dictum neque, nec sagittis quam blandit vitae. Pellentesque et fringilla nibh, in tristique turpis. In tempus felis vel turpis euismod, id pulvinar ligula euismod. Vivamus efficitur risus nec malesuada sollicitudin. In id ante quis est aliquet rutrum. Nunc augue risus, sodales a malesuada viverra, consequat ornare sem. Aenean interdum eleifend ultrices. Vestibulum molestie, ipsum sit amet varius posuere, orci nunc sagittis augue, sit amet ultrices felis ligula vel odio. Etiam commodo varius massa at mollis.
       </div>
@@ -198,13 +205,52 @@
               text......
             </div>
           </div>
-          <div class="col col-30">
+          <div class="col col--30">
             <div class="demostyle">
               text......
             </div>
           </div>
         </div>
       </xmp>
+    </div>
+  </div>
+
+
+  <h2 class="t-c">
+    Smaller container <code>container--small</code>
+  </h2>
+  <div class="row container container--small">
+    <div class="col">
+      <div class="demostyle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dui eleifend, volutpat odio id, maximus risus. Quisque dapibus vulputate orci, eget feugiat lectus interdum a. Cras et nibh mauris. Maecenas efficitur felis orci, a egestas magna maximus sit amet. Curabitur eu urna dictum, dictum massa nec, maximus mauris. Aenean feugiat, odio id varius faucibus, est mi rutrum sapien, vitae pulvinar arcu neque at mi. Curabitur blandit odio id est varius dapibus. Donec vitae purus ultricies, cursus purus ac, aliquam orci. Phasellus faucibus risus eu magna sodales lacinia. Sed vitae ultrices enim.
+      </div>
+    </div>
+  </div>
+  <!-- Code view -->
+  <div class="row container container--small">
+    <div class="col">
+      <xmp class="prettyprint">
+        <div class="row container container--small">
+          <div class="col">
+            <div class="demostyle">
+              text......
+            </div>
+          </div>
+        </div>
+      </xmp>
+    </div>
+  </div>
+
+
+  <div class="row container t-c">
+    <div class="col">
+      <h2>More info</h2>
+      <p>
+        You can do a lot more with <code>flexbox</code>. Please visit <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">this page</a> for more information.<br />This guideline will be updated as we develop and test the layout.
+      </p>
+      <p>
+        &nbsp;
+      </p>
     </div>
   </div>
 

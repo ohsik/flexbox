@@ -1,0 +1,40 @@
+/*
+Demo style (You don't need this on your page.)
+*/
+html, body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+h1{
+  margin-top: 60px;
+}
+.col{
+  word-break: break-word;
+}
+.demostyle{
+  background: #64a3dc;
+  color: #fff;
+  padding: 1em;
+  margin: 0.5em;
+}
+.t-c{
+  text-align: center;
+}
+h2{
+  margin: 60px 0 20px 0;
+}
+.prettyprint{
+  background: #f8f8f8;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  font-size: 14px;
+}
+code{
+  background: #eee;
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-weight: normal;
+  font-size: 80%;
+}
