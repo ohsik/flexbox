@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A simple CSS flexbox grid system</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="row container t-c">
+    <div class="col">
+      <h1>A simple CSS flexbox grid system</h1>
+      <p>
+        Flexbox grid system guideline. More info visit <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a>. Media query set to <code>@media (max-width: 768px)</code>
+      </p>
+    </div>
+  </div>
+
+
+  <h2 class="t-c">
+    Full div
+  </h2>
+  <div class="row">
+    <div class="col">
+      <div class="demostyle">Full - #1</div>
+    </div>
+  </div>
+  <!-- Code view -->
+  <div class="row container">
+    <div class="col">
+      <xmp class="prettyprint">
+        <div class="row">
+          <div class="col">
+            <div class="demostyle">Full - #1</div>
+          </div>
+        </div>
+      </xmp>
+    </div>
+  </div>
+
+  <h2 class="t-c">
+    Use <code>row</code> on parent div and use <code>col</code> on child divs
+  </h2>
+  <div class="row">
+    <div class="col">
+      <div class="demostyle">1/2 - #1</div>
+    </div>
+    <div class="col">
+      <div class="demostyle">1/2 - #2</div>
+    </div>
+  </div>
+  <!-- Code view -->
+  <div class="row container">
+    <div class="col">
+      <xmp class="prettyprint">
+        <div class="row">
+          <div class="col">
+            <div class="demostyle">1/2 - #1</div>
+          </div>
+          <div class="col">
+            <div class="demostyle">1/2 - #2</div>
+          </div>
+        </div>
+      </xmp>
+    </div>
+  </div>
+
+
+  <h2 class="t-c">
+    Use <code>container</code> on parent div for boxed layout
+  </h2>
+  <div class="row container">
+    <div class="col">
+      <div class="demostyle">1/3 - #1</div>
+    </div>
+    <div class="col">
+      <div class="demostyle">1/3 - #2</div>
+    </div>
+    <div class="col">
+      <div class="demostyle">1/3 - #3</div>
+    </div>
+  </div>
+  <!-- Code view -->
+  <div class="row container">
+    <div class="col">
+      <xmp class="prettyprint">
+        <div class="row container">
+          <div class="col">
+            <div class="demostyle">1/3 - #1</div>
+          </div>
+          <div class="col">
+            <div class="demostyle">1/3 - #2</div>
+          </div>
+          <div class="col">
+            <div class="demostyle">1/3 - #3</div>
+          </div>
+        </div>
+      </xmp>
+    </div>
+  </div>
+
+
+  <h2 class="t-c">
+    Example of 5 columns in a row
+  </h2>
+  <div class="row container">
+    <div class="col">
+      <div class="demostyle">1/5 - #1</div>
+    </div>
+    <div class="col">
+      <div class="demostyle">1/5 - #2</div>
+    </div>
+    <div class="col">
+      <div class="demostyle">1/5 - #3</div>
+    </div>
+    <div class="col">
+      <div class="demostyle">1/5 - #4</div>
+    </div>
+    <div class="col">
+      <div class="demostyle">1/5 - #5</div>
+    </div>
+  </div>
+  <!-- Code view -->
+  <div class="row container">
+    <div class="col">
+      <xmp class="prettyprint">
+        <div class="row container">
+          <div class="col">
+            <div class="demostyle">1/5 - #1</div>
+          </div>
+          <div class="col">
+            <div class="demostyle">1/5 - #2</div>
+          </div>
+          <div class="col">
+            <div class="demostyle">1/5 - #3</div>
+          </div>
+          <div class="col">
+            <div class="demostyle">1/5 - #4</div>
+          </div>
+          <div class="col">
+            <div class="demostyle">1/5 - #5</div>
+          </div>
+        </div>
+      </xmp>
+    </div>
+  </div>
+
+  <h2 class="t-c">
+    Custom grid <code>col-30</code> and <code>col-50</code> (Showing <code>col-30</code> below)
+  </h2>
+  <div class="row container">
+    <div class="col">
+      <div class="demostyle">Auto - #1</div>
+    </div>
+    <div class="col col-30">
+      <div class="demostyle">33.3333% - #2</div>
+    </div>
+  </div>
+  <!-- Code view -->
+  <div class="row container">
+    <div class="col">
+      <xmp class="prettyprint">
+        <div class="row container">
+          <div class="col">
+            <div class="demostyle">Auto - #1</div>
+          </div>
+          <div class="col col-30">
+            <div class="demostyle">33.3333% - #2</div>
+          </div>
+        </div>
+      </xmp>
+    </div>
+  </div>
+
+
+  <h2 class="t-c">
+    Example with text <code>auto</code> and <code>col-30</code>
+  </h2>
+  <div class="row container">
+    <div class="col">
+      <div class="demostyle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dui eleifend, volutpat odio id, maximus risus. Quisque dapibus vulputate orci, eget feugiat lectus interdum a. Cras et nibh mauris. Maecenas efficitur felis orci, a egestas magna maximus sit amet. Curabitur eu urna dictum, dictum massa nec, maximus mauris. Aenean feugiat, odio id varius faucibus, est mi rutrum sapien, vitae pulvinar arcu neque at mi. Curabitur blandit odio id est varius dapibus. Donec vitae purus ultricies, cursus purus ac, aliquam orci. Phasellus faucibus risus eu magna sodales lacinia. Sed vitae ultrices enim.
+      </div>
+    </div>
+    <div class="col col-30">
+      <div class="demostyle">
+        Donec venenatis purus tellus, ac viverra sapien malesuada vitae. Donec venenatis rhoncus augue in dapibus. Integer aliquam efficitur dolor ac molestie. Vestibulum sit amet congue urna, et ultrices metus. Etiam vel lectus nibh. Aliquam erat volutpat. Curabitur tristique erat eu leo sollicitudin, at faucibus ex sollicitudin. Proin pellentesque dictum neque, nec sagittis quam blandit vitae. Pellentesque et fringilla nibh, in tristique turpis. In tempus felis vel turpis euismod, id pulvinar ligula euismod. Vivamus efficitur risus nec malesuada sollicitudin. In id ante quis est aliquet rutrum. Nunc augue risus, sodales a malesuada viverra, consequat ornare sem. Aenean interdum eleifend ultrices. Vestibulum molestie, ipsum sit amet varius posuere, orci nunc sagittis augue, sit amet ultrices felis ligula vel odio. Etiam commodo varius massa at mollis.
+      </div>
+    </div>
+  </div>
+  <!-- Code view -->
+  <div class="row container">
+    <div class="col">
+      <xmp class="prettyprint">
+        <div class="row container">
+          <div class="col">
+            <div class="demostyle">
+              text......
+            </div>
+          </div>
+          <div class="col col-30">
+            <div class="demostyle">
+              text......
+            </div>
+          </div>
+        </div>
+      </xmp>
+    </div>
+  </div>
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</body>
+</html>
