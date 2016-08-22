@@ -20,6 +20,13 @@ p{
   padding: 1em;
   margin: 0.5em;
 }
+.row-bg-demo{
+  background: #64a3dc;
+}
+.row-bg-demo .demostyle{
+  background: #fff;
+  color: #64a3dc;
+}
 .t-c{
   text-align: center;
 }
